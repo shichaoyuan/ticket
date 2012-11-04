@@ -34,7 +34,7 @@ public class Main {
 					System.out.println("===========================");
 					returnCode = ticket.rob("1", "NextDday", timeType);
 					Thread.sleep(1000);
-				} while (((returnCode != 0) && (returnCode != 2) ));
+				} while (((returnCode != 0) && (returnCode != 1)));
 			}
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();

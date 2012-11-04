@@ -167,12 +167,14 @@ public class Ticket {
 						returnCode = 3;
 					}
 				}
+				postTicketMethod.releaseConnection();
 
 			} else {
 				System.out.println("you have got a ticket");
 				returnCode = 1;
 			}
 		}
+		getInfoMethod.releaseConnection();
 
 		return returnCode;
 
