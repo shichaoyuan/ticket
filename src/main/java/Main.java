@@ -33,14 +33,11 @@ public class Main {
 				do {
 					System.out.println("===========================");
 					returnCode = ticket.rob("1", "NextDday", timeType);
-					Thread.sleep(1000);
 				} while (((returnCode != 0) && (returnCode != 1)));
 			}
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} finally {
 			ticket.shutdown();
